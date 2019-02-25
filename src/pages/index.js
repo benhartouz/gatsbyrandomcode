@@ -5,6 +5,8 @@ import Layout from "../components/layout";
 import Image from "../components/image";
 import SEO from "../components/seo";
 import ThreadInput from "../components/ThreadInput";
+import ThreadRender from "../components/ThreadRender";
+import { ThreadInputContainer } from "../state";
 
 const TowColumn = styled.div`
     display: grid;
@@ -25,13 +27,18 @@ const IndexPage = () => (
             <li>preview your twitte</li>
             <li>click post</li>
         </ol>
-        <TowColumn>
-            <div>
-                <div>Write markdown here</div>
-                <ThreadInput />
-            </div>
-            <div>Your twitter thread</div>
-        </TowColumn>
+        <ThreadInputContainer.Provider>
+            <TowColumn>
+                <div>
+                    <div>Write markdown here:</div>
+                    <ThreadInput />
+                </div>
+                <div>
+                    <div>Your twitter thread:</div>
+                    <ThreadRender />
+                </div>
+            </TowColumn>
+        </ThreadInputContainer.Provider>
     </Layout>
 );
 
