@@ -14,6 +14,22 @@ const TowColumn = styled.div`
     grid-grap: 10px;
 `;
 
+const Container = styled.div`
+    margin: 10px;
+`;
+
+const H1 = styled.h1`
+    font-size: 20px;
+    display: block;
+    font-weight: 700;
+    font-family: monospace;
+    text-transform: uppercase;
+    margin: 0px 10px 10px 0px;
+    text-decoration: underline;
+    line-height: 10px;
+    padding: 10px;
+`;
+
 const IndexPage = () => (
     <Layout>
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
@@ -29,14 +45,14 @@ const IndexPage = () => (
         </ol>
         <ThreadInputContainer.Provider>
             <TowColumn>
-                <div>
-                    <div>Write markdown here:</div>
+                <Container>
+                    <H1>Write markdown here:</H1>
                     <ThreadInput />
-                </div>
-                <div>
-                    <div>Your twitter thread:</div>
+                </Container>
+                <Container>
+                    <H1>Your twitter thread:</H1>
                     <ThreadRender />
-                </div>
+                </Container>
             </TowColumn>
         </ThreadInputContainer.Provider>
     </Layout>
