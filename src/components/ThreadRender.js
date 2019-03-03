@@ -8,8 +8,13 @@ const TweetStyle = styled.div`
     font-size: 24px;
 `;
 
+const CharCountStyle = styled.div`
+    font-size: 17px;
+    text-align: center;
+`;
+
 const CharCount = ({ value }) => {
-    return <div>{value.length}</div>;
+    return <CharCountStyle>{value.length}</CharCountStyle>;
 };
 
 const Tweet = ({ value }) => {
@@ -29,7 +34,6 @@ const Tweet = ({ value }) => {
         <TweetStyle>
             {rendered}
             <CharCount value={rendered} />
-            sdfsd
         </TweetStyle>
     );
 };
