@@ -8083,6 +8083,13 @@ remark-stringify@^6.0.0:
     unherit "^1.0.4"
     xtend "^4.0.1"
 
+remark-utf8@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/remark-utf8/-/remark-utf8-1.1.0.tgz#c0be43f49cafb852c1a7e915a01064535aad619f"
+  dependencies:
+    remark "^10.0.1"
+    unist-util-visit "^1.4.0"
+
 remark@^10.0.1:
   version "10.0.1"
   resolved "https://registry.yarnpkg.com/remark/-/remark-10.0.1.tgz#3058076dc41781bf505d8978c291485fe47667df"
@@ -9407,7 +9414,7 @@ unist-util-visit-parents@^2.0.0:
   dependencies:
     unist-util-is "^2.1.2"
 
-unist-util-visit@^1.1.0:
+unist-util-visit@^1.1.0, unist-util-visit@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-1.4.0.tgz#1cb763647186dc26f5e1df5db6bd1e48b3cc2fb1"
   dependencies:
